@@ -9,6 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet var btcLabel: UILabel!
+    @IBOutlet var updateBtn: UIButton!
+    @IBOutlet var lastTime: UILabel!
+    
     var url = "https://api.coincap.io/v2/rates/bitcoin"
     
     override func viewDidLoad() {
@@ -26,7 +30,9 @@ class ViewController: UIViewController {
                     let btc = try! Welcome(jsonString)
                     
                     DispatchQueue.main.async {
-                        let btcText = "\(Float(btc.data.rateUsd)!.clean) \(btc.data.currencySymbol)"
+                        let btcText = "\(Float(btc.data.rateUsd)!.clean)\(btc.data.currencySymbol)"
+                        self.btcLabel.text = btcText
+                        self.lastTime.text = "\(self.timeConv(timeStamp: (Double(btc.timestamp) / 1000) ))"
                     }
                     
                  }
@@ -34,6 +40,19 @@ class ViewController: UIViewController {
            }.resume()
         }
     }
+    
+    func timeConv(timeStamp : Double) -> String {
 
+            let date = NSDate(timeIntervalSince1970: timeStamp)
+
+            let dayTimePeriodFormatter = DateFormatter()
+            dayTimePeriodFormatter.dateFormat = "MMM dd YY, HH:mm:ss"
+
+            let dateString = dayTimePeriodFormatter.string(from: date as Date)
+            return dateString
+        }
+    
+    @IBAction func update(_ sender: Any) {jss()}
+    
 }
 
