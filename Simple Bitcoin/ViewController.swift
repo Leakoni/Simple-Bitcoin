@@ -15,21 +15,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadAPI()
+        jss()
     }
+
     
-    func loadAPI(){
+    func jss(){
         if let url = URL(string: url) {
            URLSession.shared.dataTask(with: url) { data, response, error in
               if let data = data {
                  if let jsonString = String(data: data, encoding: .utf8) {
 
-                    let btc = try! Welcome(jsonString)
-                    
-                    DispatchQueue.main.async {
-                        self.testing.text = "\(Float(btc.data.rateUsd)!.clean) \(btc.data.currencySymbol)"
-                    }
-
+                    let welcome = try! Welcome(jsonString)
+                    print(welcome.data.rateUsd)
                     
                  }
                }
