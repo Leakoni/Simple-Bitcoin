@@ -14,7 +14,7 @@
 		9A500E5726BB088D00DB2DE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A500E5626BB088D00DB2DE6 /* Assets.xcassets */; };
 		9A500E5A26BB088D00DB2DE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A500E5826BB088D00DB2DE6 /* LaunchScreen.storyboard */; };
 		9A500E6226BB08E300DB2DE6 /* BitcoinClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A500E6126BB08E300DB2DE6 /* BitcoinClass.swift */; };
-		9A500E6426BB105600DB2DE6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A500E6326BB105600DB2DE6 /* Extensions.swift */; };
+		9A500E6626BB132B00DB2DE6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A500E6526BB132B00DB2DE6 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		9A500E5926BB088D00DB2DE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A500E5B26BB088D00DB2DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A500E6126BB08E300DB2DE6 /* BitcoinClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinClass.swift; sourceTree = "<group>"; };
-		9A500E6326BB105600DB2DE6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9A500E6526BB132B00DB2DE6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 				9A500E5626BB088D00DB2DE6 /* Assets.xcassets */,
 				9A500E5826BB088D00DB2DE6 /* LaunchScreen.storyboard */,
 				9A500E5B26BB088D00DB2DE6 /* Info.plist */,
-				9A500E6326BB105600DB2DE6 /* Extensions.swift */,
+				9A500E6526BB132B00DB2DE6 /* Extensions.swift */,
 			);
 			path = "Simple Bitcoin";
 			sourceTree = "<group>";
@@ -143,7 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A500E6426BB105600DB2DE6 /* Extensions.swift in Sources */,
+				9A500E6626BB132B00DB2DE6 /* Extensions.swift in Sources */,
 				9A500E5226BB087B00DB2DE6 /* ViewController.swift in Sources */,
 				9A500E4E26BB087B00DB2DE6 /* AppDelegate.swift in Sources */,
 				9A500E5026BB087B00DB2DE6 /* SceneDelegate.swift in Sources */,

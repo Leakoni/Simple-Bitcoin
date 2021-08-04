@@ -23,8 +23,11 @@ class ViewController: UIViewController {
               if let data = data {
                  if let jsonString = String(data: data, encoding: .utf8) {
 
-                    let welcome = try! Welcome(jsonString)
-                    print(welcome.data.rateUsd)
+                    let btc = try! Welcome(jsonString)
+                    
+                    DispatchQueue.main.async {
+                        let btcText = "\(Float(btc.data.rateUsd)!.clean) \(btc.data.currencySymbol)"
+                    }
                     
                  }
                }
