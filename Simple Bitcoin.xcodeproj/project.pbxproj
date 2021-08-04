@@ -13,6 +13,7 @@
 		9A500E5526BB087B00DB2DE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A500E5326BB087B00DB2DE6 /* Main.storyboard */; };
 		9A500E5726BB088D00DB2DE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A500E5626BB088D00DB2DE6 /* Assets.xcassets */; };
 		9A500E5A26BB088D00DB2DE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A500E5826BB088D00DB2DE6 /* LaunchScreen.storyboard */; };
+		9A500E6226BB08E300DB2DE6 /* BitcoinClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A500E6126BB08E300DB2DE6 /* BitcoinClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9A500E5626BB088D00DB2DE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A500E5926BB088D00DB2DE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A500E5B26BB088D00DB2DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A500E6126BB08E300DB2DE6 /* BitcoinClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		9A500E4126BB087B00DB2DE6 = {
 			isa = PBXGroup;
 			children = (
+				9A500E6126BB08E300DB2DE6 /* BitcoinClass.swift */,
 				9A500E4C26BB087B00DB2DE6 /* Simple Bitcoin */,
 				9A500E4B26BB087B00DB2DE6 /* Products */,
 			);
@@ -140,6 +143,7 @@
 				9A500E5226BB087B00DB2DE6 /* ViewController.swift in Sources */,
 				9A500E4E26BB087B00DB2DE6 /* AppDelegate.swift in Sources */,
 				9A500E5026BB087B00DB2DE6 /* SceneDelegate.swift in Sources */,
+				9A500E6226BB08E300DB2DE6 /* BitcoinClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +300,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.latenightdevelopment.Simple-Bitcoin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.latenightdevelopment.Simple-Bitcoin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
