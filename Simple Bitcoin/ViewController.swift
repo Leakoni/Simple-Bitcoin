@@ -8,8 +8,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet var testing: UITextView!
     
     var url = "https://api.coincap.io/v2/rates/bitcoin"
     
